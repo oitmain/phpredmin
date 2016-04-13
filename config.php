@@ -33,6 +33,19 @@ $config = array(
                 'dbNames' => array( /* Name databases. key should be database id and value is the name */
                 ),
             ),
+            array(
+                'host'     => 'localhost',
+                'port'     => '6380',
+                'password' => null,
+                'database' => 0,
+                'max_databases' => 16, /* Manual configuration of max databases for Redis < 2.6 */
+                'stats'    => array(
+                    'enable'   => 1,
+                    'database' => 0,
+                ),
+                'dbNames' => array( /* Name databases. key should be database id and value is the name */
+                ),
+            ),
         ),
     ),
     'session' => array(
